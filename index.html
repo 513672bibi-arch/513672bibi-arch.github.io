@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OwOb</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffb6d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
+  }
+
+  body {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .sparkle {
+    position: absolute;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 24px;
+    user-select: none;
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(15deg); }
+  }
+
+  .link-text {
+    color: #ffffff;
+    font-size: clamp(2.5rem, 18vw, 5rem);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6), 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+    z-index: 10;
+    white-space: nowrap;
+    max-width: 90vw;
+    text-align: center;
+  }
+
+  .link-text:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(255,255,255,0.9), 0 4px 16px rgba(0,0,0,0.2);
+  }
+
+  .link-text:active {
+    transform: scale(0.95);
+  }
+</style>
+</head>
+<body>
+
+  <div class="sparkle" style="top:10%; left:15%;">✦</div>
+  <div class="sparkle" style="top:20%; left:80%; animation-delay: 1s;">♡</div>
+  <div class="sparkle" style="top:75%; left:20%; animation-delay: 2s;">✦</div>
+  <div class="sparkle" style="top:80%; left:75%; animation-delay: 1.5s;">♡</div>
+  <div class="sparkle" style="top:50%; left:5%; animation-delay: 0.5s;">✧</div>
+  <div class="sparkle" style="top:45%; left:90%; animation-delay: 2.5s;">✧</div>
+
+  <a class="link-text" href="https://bsky.app/profile/tcfsh.me" target="_blank" rel="noopener">OwOb</a>
+
+</body>
+</html>
